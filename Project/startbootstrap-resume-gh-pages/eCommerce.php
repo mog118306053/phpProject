@@ -5,12 +5,12 @@
                 //Prices here
             var x = 5;
             var y = 10;
-            var p = x = y * 12;
+            var p = x + y * 12;
             var b = y * 12;
                
             if (document.getElementById('basicProgram').checked){
                 //Basic package is checked
-                 document.calculator.total.value =b;
+                 document.calculator.total.value = b;
                    
             } else if (document.getElementById('proProgram').checked){
                  //Pro Package is checked
