@@ -41,7 +41,7 @@ $_SESSION['txtTotal']= $totalValue2 ;
        
                     <tr>
                          <td> Password </td>
-                         <td><input type="password" id="txtPassword" name="txtPassword" value="" Required/> </td>
+                         <td><input type="password" id="txtPassword" name="txtPassword" value="" pattern="[1234]{4}" Required/> </td>
                          <!-- Password = 1234 -->
                     </tr>
        
