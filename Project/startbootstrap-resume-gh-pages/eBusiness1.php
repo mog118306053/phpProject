@@ -1,6 +1,6 @@
 
 
-<!--Creating a session variable and assigning it to txtTotal -->
+<!--Create a variable and assign it to txtTotal -->
 <?php
 session_start();
 $totalValue = "";
@@ -11,19 +11,20 @@ $_SESSION['txtTotal'] = $totalValue;
     <head>
           <meta charset="utf-8" />
           <title> Ebusiness CalculationA</title>
-          <link rel="stylesheet" href="style.css" type="text/css" />
+       <!--   <link rel="stylesheet" href="style.css" type="text/css" /> -->
+          <link rel="stylesheet" type="text/css" href="css/eBusinessCss.css"/>
     </head>
    
     <body>
    
         <div class="form">
             <form name="intCalc" method="post" action="eBusiness2.php">
-                  <h1>Shop Calculator</h1>
-               
+                
+                <h1>Consultancy Shop</h1>
                 <center>
                     <table cellspacing="10">
                         
-                        <h1> Select a Consulting Service: </h1>
+                        <h3> Select a Consulting Service: </h3>
                         
                          <tr>
                             <td>Blockchain @ $1000</td>
@@ -107,7 +108,7 @@ $_SESSION['txtTotal'] = $totalValue;
                 var vatCalc = parseFloat(subTotal * .20);
                 var total = parseFloat(subTotal - discCalc + vatCalc);
                
-                //Inserting them into the correct fields
+                //Placing them into the correct place
                 document.intCalc.txtDisc.value = discCalc;
                 document.intCalc.txtVat.value = vatCalc;
                 document.intCalc.txtTotal.value = total;
