@@ -31,7 +31,7 @@
  echo "The total value is : ".$totalValue2."$";
  ?>
         <br></br>
-        <a href="IndexMenu.html" class="button"> Return to Menu</a>
+        <a href="IndexMenu2.php" class="button"> Return to Menu</a>
     </center>
         </div>
     </body>
